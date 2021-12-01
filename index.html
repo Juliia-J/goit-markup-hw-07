@@ -369,9 +369,9 @@
     <label class="signup-label">
       <input class="signup-mail" type="email" name="email" placeholder="E-mail" />
     </label>
-    <button class="hero-button" type="submit">Подписаться
+    <button class="footer-button" type="submit">Подписаться
       <svg class="icon-send-foot" width="24" height="24">
-        <use href="./icon/sprite.svg#icon-compass">
+        <use href="./icon/sprite.svg#icon-send">
         </use>
       </svg>
     </button>
@@ -392,8 +392,53 @@
         <use href="./icon/sprite.svg#icon-close">
         </use>
       </svg>
-
     </button>
+
+    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+    <form action="#" class="modal-form">
+
+      <div class="modal-fild">
+      <label for="name" class="lable-text">Имя</label>
+        <input type="text" 
+        id="name"
+        class="modal-form-input" 
+        name="username" 
+        required
+        autofocus />
+      </div>
+
+      <div class="modal-fild">
+      <label for="tel" class="lable-text">Телефон</label>
+        <input type="tel" 
+        id="tel"
+        class="modal-form-input" 
+        name="tel"
+        required />
+        </div>
+      
+      <div class="modal-fild">
+      <label for="email" class="lable-text">Почта</label>
+        <input type="email" 
+        id="email"
+        class="modal-form-input" 
+        name="email" 
+        required/>
+        </div>
+
+      <div class="modal-fild" class="lable-text">
+      <label for="comment" >Комментарий</label>
+        <textarea name="comment" 
+        id="comment" 
+        class="modal-form-text"
+        placeholder="Введите текст"
+        
+        >
+        </textarea>
+        </div>
+
+      <button type="submit">Отправить</button>
+
+    </form>
   </div>
 </div>
 <script src="./js/modal.js"></script>
