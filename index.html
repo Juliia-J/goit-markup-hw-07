@@ -425,18 +425,24 @@
         required/>
         </div>
 
-      <div class="modal-fild" class="lable-text">
-      <label for="comment" >Комментарий</label>
+      <div class="modal-fild">
+      <label for="comment" class="lable-text">Комментарий</label>
         <textarea name="comment" 
         id="comment" 
         class="modal-form-text"
         placeholder="Введите текст"
-        
-        >
-        </textarea>
+        ></textarea>
         </div>
 
-      <button type="submit">Отправить</button>
+        <label class="agreement">
+          <input type="checkbox" 
+          name="agreement" 
+          value="agreement" 
+          class="agreement-input"/>
+          Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="">Условия договора</a>
+        </label>
+
+      <button class="form-send" type="submit">Отправить</button>
 
     </form>
   </div>
