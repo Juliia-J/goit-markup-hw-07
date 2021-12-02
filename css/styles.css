@@ -854,13 +854,15 @@ body {
 }
 
 .footer-button {
-  display: flex;
-  align-items: baseline;
+  position: relative;
 }
 
 .icon-send-foot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
   fill: var(--text-white);
-  margin-left: 10px;
 }
 
 /* --------Модальное окно - Форма------ */
@@ -909,6 +911,11 @@ body {
   justify-content: center;
 }
 
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+  fill: var(--accent-color);
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -932,22 +939,46 @@ body {
   border-radius: 4px;
   margin-bottom: 10px;
   margin-top: 4px;
-  padding-left: 14px;
+  padding-left: 42px;
   padding-right: 14px;
 }
 
-/* .modal-form-input:hover,
-.modal-form-input:focus {
-  border-color: var(--accent-color); */
+.modal-form-input:hover {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+
+.modal-form-text:hover {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
 }
 
 .lable-text {
   display: block;
   font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 
-color: var(--title-text-color);
+  color: var(--title-text-color);
+}
+
+.modal-fild {
+  position: relative;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 42%;
+  left: 15px;
+
+  /* transform: translateY(-42%); */
+
+  display: inline-block;
+}
+
+.modal-form-input:focus + .modal-icon,
+.modal-form-input:hover + .modal-icon {
+  fill: var(--accent-color);
 }
 
 .modal-form-text {
@@ -957,19 +988,43 @@ color: var(--title-text-color);
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
+  margin-top: 4px;
+  margin-bottom: 20px;
 }
 
+.agreement {
+  display: block;
+}
+
+.icon-check {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox {
+  appearance: none;
+}
+
+.checkbox:checked + .icon-check {
+  background-color: var(--accent-color);
+  fill: orange;
+}
+
+.agreement-link {
+  color: var(--accent-color);
+}
 
 .form-send {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   border-radius: 4px;
   padding: 10px 32px;
   width: 200px;
   height: 50px;
+  margin-top: 30px;
 
   color: var(--text-white);
   font-family: inherit;
