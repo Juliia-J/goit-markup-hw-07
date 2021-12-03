@@ -941,15 +941,20 @@ body {
   margin-top: 4px;
   padding-left: 42px;
   padding-right: 14px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:hover {
-  border: 1px solid var(--accent-color);
+.modal-form-input:hover,
+.modal-form-input:focus {
+  border-color: var(--accent-color);
   cursor: pointer;
 }
 
-.modal-form-text:hover {
-  border: 1px solid var(--accent-color);
+.modal-form-text:hover,
+.modal-form-text:focus {
+  border-color: var(--accent-color);
   cursor: pointer;
 }
 
@@ -968,12 +973,13 @@ body {
 
 .modal-icon {
   position: absolute;
-  top: 42%;
+  top: 55%;
   left: 15px;
+  fill: var(--primary-text-color);
 
-  /* transform: translateY(-42%); */
-
-  display: inline-block;
+  transform: translateY(-55%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus + .modal-icon,
@@ -990,29 +996,45 @@ body {
   padding: 12px 16px;
   margin-top: 4px;
   margin-bottom: 20px;
+  outline: none;
 }
 
-.agreement {
-  display: block;
+.check-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--title-text-color);
 }
 
-.icon-check {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
+.item-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  background-color: var(--font-bkg-white-color);
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.check {
+  fill: var(--text-white);
 }
 
-.checkbox {
-  appearance: none;
-}
-
-.checkbox:checked + .icon-check {
+.agreement-input:checked + .check-text .item-check {
   background-color: var(--accent-color);
-  fill: orange;
+  border: none;
 }
 
 .agreement-link {
+  display: block;
   color: var(--accent-color);
+  margin-left: 4px;
 }
 
 .form-send {
