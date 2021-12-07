@@ -1,0 +1,51 @@
+.page-header {
+  background-color: var(--font-bkg-white-color);
+  border: 1px solid #ececec;
+}
+
+.logo,
+.studio {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover,
+.logo:focus {
+  text-decoration: underline;
+}
+
+.studio {
+  margin-right: 93px;
+  color: var(--primary-text-color);
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-mail:hover,
+.icon-mail:focus {
+  fill: var(--accent-color);
+}
+.icon-tel:hover,
+.icon-tel:focus {
+  fill: var(--accent-color);
+}
