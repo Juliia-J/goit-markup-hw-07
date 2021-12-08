@@ -33,6 +33,10 @@
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .icon-tel {
@@ -40,12 +44,8 @@
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
-}
-.icon-mail:hover,
-.icon-mail:focus {
-  fill: var(--accent-color);
-}
-.icon-tel:hover,
-.icon-tel:focus {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }

@@ -25,6 +25,10 @@
   border-radius: 4px;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .klients-item + .klients-item {
@@ -38,27 +42,19 @@
   align-items: center;
   justify-content: center;
   background-color: var(--font-bkg-white-color);
+  &:hover {
+    .klients-icon {
+      fill: var(--accent-color);
+    }
+  &:focus {
+      .klients-icon {
+        fill: var(--accent-color);
+      }
+    }
+  }
 }
 
 .klients-icon {
   fill: var(--font-icon);
-
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.klients-link:hover {
-  .klients-icon {
-    fill: var(--accent-color);
-  }
-}
-
-.klients-link:focus {
-  .klients-icon {
-    fill: var(--accent-color);
-  }
-}
-
-.klients-item:hover,
-.klients-item:focus {
-  border: 1px solid var(--accent-color);
 }

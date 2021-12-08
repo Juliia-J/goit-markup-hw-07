@@ -23,13 +23,12 @@
   transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo-footer:hover,
-.logo-footer:focus {
-  text-decoration: underline;
-}
-
 .logo-footer {
   color: var(--accent-color);
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .footer-add {
@@ -43,11 +42,10 @@
   text-decoration: none;
 
   transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-add:hover,
-.footer-add:focus {
-  text-decoration: underline 2px var(--accent-color);
+  &:hover,
+  &:focus {
+    text-decoration: underline 2px var(--accent-color);
+  }
 }
 
 .footer-link {
@@ -60,11 +58,10 @@
 
     transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
-
-.footer-link a:hover,
-.footer-link a:focus {
-  text-decoration: underline 2px var(--accent-color);
+  & a:hover,
+  & a:focus {
+    text-decoration: underline 2px var(--accent-color);
+  }
 }
 
 .mail {
@@ -108,6 +105,10 @@
   background-color: var(--font-icon-footer);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .footer-item + .footer-item {
   margin-left: 10px;
@@ -119,10 +120,6 @@
   fill: var(--text-white);
 }
 
-.link-icon:hover,
-.link-icon:focus {
-  background-color: var(--accent-color);
-}
 .signup_form {
   display: flex;
 }

@@ -18,6 +18,7 @@
   margin-right: 30px;
   background-color: var(--font-bkg-white-color);
 }
+
 .command-title {
   margin-top: 30px;
   margin-bottom: 0;
@@ -28,6 +29,7 @@
   text-align: center;
   background-color: var(--font-bkg-white-color);
 }
+
 .command-text {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -58,6 +60,10 @@
   background-color: var(--font-bkg-white-color);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .soc-item + .soc-item {
@@ -72,12 +78,13 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.command-link-icon:hover,
-.command-link-icon:focus {
-  background-color: var(--accent-color);
+.command-link-icon:hover {
+  .icon-soc {
+    fill: var(--text-white);
+  }
 }
-
-.command-link-icon:hover .icon-soc,
-.command-link-icon:focus .icon-soc {
-  fill: var(--text-white);
+.command-link-icon:focus {
+  .icon-soc {
+    fill: var(--text-white);
+  }
 }
