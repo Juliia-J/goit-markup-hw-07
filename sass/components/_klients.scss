@@ -46,9 +46,16 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.klients-link:hover .klients-icon,
-.klients-link:focus .klients-icon {
-  fill: var(--accent-color);
+.klients-link:hover {
+  .klients-icon {
+    fill: var(--accent-color);
+  }
+}
+
+.klients-link:focus {
+  .klients-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .klients-item:hover,

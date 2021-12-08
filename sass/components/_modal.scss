@@ -8,9 +8,11 @@
   transition: opacity 400ms, visibility 400ms;
 }
 
-.backdrop.is-hidden .modal {
-  transform: rotate(180deg);
-  transition: transform 600ms;
+.backdrop.is-hidden {
+  .modal {
+    transform: rotate(180deg);
+    transition: transform 600ms;
+  }
 }
 
 .modal {
@@ -157,9 +159,11 @@
   fill: var(--text-white);
 }
 
-.agreement-input:checked + .check-text .item-check {
-  background-color: var(--accent-color);
-  border: none;
+.agreement-input:checked + .check-text {
+  .item-check {
+    background-color: var(--accent-color);
+    border: none;
+  }
 }
 
 .agreement-link {
