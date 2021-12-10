@@ -3,8 +3,8 @@
   border: 1px solid #ececec;
 }
 
-.logo,
-.studio {
+.logo-nav__logo,
+.logo-nav__studio {
   margin-top: 24px;
   margin-bottom: 25px;
   font-family: Raleway, sans-serif;
@@ -18,12 +18,12 @@
   transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo:hover,
-.logo:focus {
+.logo-nav__logo:hover,
+.logo-nav__logo:focus {
   text-decoration: underline;
 }
 
-.studio {
+.logo-nav__studio {
   margin-right: 93px;
   color: var(--primary-text-color);
 }

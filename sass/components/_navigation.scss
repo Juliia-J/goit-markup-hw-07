@@ -18,6 +18,7 @@
   .item:not(:last-child) {
     margin-right: 50px;
   }
+
   & {
     .site-link.current {
       color: var(--accent-color);
