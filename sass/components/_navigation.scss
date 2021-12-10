@@ -15,18 +15,18 @@
 
 .site-nav {
   display: flex;
-  .item:not(:last-child) {
+  .site-nav__item:not(:last-child) {
     margin-right: 50px;
   }
 
   & {
-    .site-link.current {
+    .site-nav__link.current {
       color: var(--accent-color);
     }
   }
 }
 
-.site-link {
+.site-nav__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -63,7 +63,7 @@
   }
 }
 
-.site-link.current::after {
+.site-nav__link.current::after {
   opacity: 1;
 }
 
