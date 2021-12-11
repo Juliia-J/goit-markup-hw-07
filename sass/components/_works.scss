@@ -4,15 +4,11 @@
   padding-bottom: 94px;
 }
 
-.works-img {
+.works__cards {
   display: flex;
 }
 
-.works-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.works-title,
+.works__title,
 .commands-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -23,11 +19,15 @@
   text-align: center;
 }
 
+.works__item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .work-overlay {
   position: relative;
 }
 
-.work-overlay-text {
+.work-overlay__text {
   position: absolute;
   width: 100%;
   height: 70px;

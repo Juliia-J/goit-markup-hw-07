@@ -28,20 +28,7 @@
   color: var(--primary-text-color);
 }
 
-.icon-mail {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-  }
-}
-
-.icon-tel {
-  width: 10px;
-  height: 16px;
+.cont-nav__icon {
   margin-right: 10px;
   fill: currentColor;
   &:hover,

@@ -71,12 +71,12 @@
   display: flex;
   align-items: baseline;
   margin-left: auto;
-  .item + .item {
+  .cont-nav__item + .cont-nav__item {
     margin-left: 50px;
   }
 }
 
-.link {
+.cont-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
