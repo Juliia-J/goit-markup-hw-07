@@ -30,7 +30,7 @@
             </ul>
         </nav>
     
-            <ul class="cont-nav list">
+            <ul class="site-nav__cont-nav cont-nav list">
                 <li class="cont-nav__item"><a href="mailto:info@devstudio.com" class="cont-nav__link link-all">
                         <svg class="cont-nav__icon" width="16" height="12">
                             <use href="./icon/sprite.svg#icon-envelope-hover">
@@ -173,52 +173,53 @@
 </main>
 
 <!--Подвал-->
-
 <footer>
 
     <section class="footer">
         <div class="container main-footer">
             <div class="footer-section">
-                <a href="./index.html" class="logo-footer link-all">Web<span
-                        class="studio-footer link-all">Studio</span></a>
+                <a href="./index.html" class="footer-section__logo link-all">Web<span
+                        class="footer-section__studio link-all">Studio</span></a>
 
-                <address class="footer-add">
+                <address class="footer-section__add">
                     г. Киев, пр-т Леси Украинки, 26
                 </address>
 
-                <ul class="footer-link list">
-                    <li class="mail"><a href="mailto:info@info@example.com" class="link-all">info@devstudio.com</a></li>
-                    <li class="tel"><a href="tel:+380991111111" class="link-all">+38 099 111 11 11</a></li>
+                <ul class="footer-cont list">
+                    <li class="footer-cont__mail"><a href="mailto:info@info@example.com"
+                            class="footer-cont__link link-all">info@devstudio.com</a></li>
+                    <li class="footer-cont__tel"><a href="tel:+380991111111" class="footer-cont__link link-all">+38 099
+                            111 11 11</a></li>
                 </ul>
             </div>
 
             <div class="network">
-                <h2 class="network-title icons">Присоединяйтесь</h2>
-                <ul class="footer-list list">
-                    <li class="footer-item">
-                        <a href="" class="link-icon">
-                            <svg class="icon-soc-foot">
+                <h2 class="network__title icons">Присоединяйтесь</h2>
+                <ul class="soc-list soc-list--footer list">
+                    <li class="soc-list__item">
+                        <a href="" class="soc-list__link soc-list__link--color">
+                            <svg class="soc-list__icon soc-list__icon--fill">
                                 <use href="./icon/sprite.svg#icon-Ellipse_inst">
                                 </use>
                             </svg></a>
                     </li>
-                    <li class="footer-item">
-                        <a href="" class="link-icon">
-                            <svg class="icon-soc-foot">
+                    <li class="soc-list__item">
+                        <a href="" class="soc-list__link soc-list__link--color">
+                            <svg class="soc-list__icon soc-list__icon--fill">
                                 <use href="./icon/sprite.svg#icon-Ellipse_berd">
                                 </use>
                             </svg></a>
                     </li>
-                    <li class="footer-item">
-                        <a href="" class="link-icon">
-                            <svg class="icon-soc-foot">
+                    <li class="soc-list__item">
+                        <a href="" class="soc-list__link soc-list__link--color">
+                            <svg class="soc-list__icon soc-list__icon--fill">
                                 <use href="./icon/sprite.svg#icon-Ellipse_f">
                                 </use>
                             </svg></a>
                     </li>
-                    <li class="footer-item">
-                        <a href="" class="link-icon">
-                            <svg class="icon-soc-foot">
+                    <li class="soc-list__item">
+                        <a href="" class="soc-list__link soc-list__link--color">
+                            <svg class="soc-list__icon soc-list__icon--fill">
                                 <use href="./icon/sprite.svg#icon-Ellipse_in">
                                 </use>
                             </svg></a>
@@ -226,21 +227,20 @@
                 </ul>
             </div>
 
-            <div class="signup">
-              <h2 class="network-title">Подпишитесь на рассылку</h2>
-              <form name="signup_form" autocomplete="on" novalidate>
-                <label class="signup-label">
-                  <input class="signup-mail" type="email" name="email" placeholder="E-mail" />
-                </label>
-                <button class="footer-button" type="submit">Подписаться
-                    <svg class="icon-send-foot" width="24" height="24">
-                        <use href="./icon/sprite.svg#icon-send">
-                        </use>
-                    </svg>
-                </button>
-               </form>
+            <div>
+                <h2 class="network__title">Подпишитесь на рассылку</h2>
+                <form name="signup-form" autocomplete="on" novalidate>
+                    <label class="signup-form__label">
+                        <input class="signup-form__mail" type="email" name="email" placeholder="E-mail" />
+                    </label>
+                    <button class="footer-button" type="submit">Подписаться
+                        <svg class="footer-button__icon" width="24" height="24">
+                            <use href="./icon/sprite.svg#icon-send">
+                            </use>
+                        </svg>
+                    </button>
+                </form>
             </div>
-
         </div>
 
     </section>

@@ -1,9 +1,7 @@
 /* Main-nav */
 
 .main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include align-list;
   background-color: var(--font-bkg-header-color);
 }
 
@@ -67,7 +65,7 @@
   opacity: 1;
 }
 
-.cont-nav {
+.site-nav__cont-nav {
   display: flex;
   align-items: baseline;
   margin-left: auto;
