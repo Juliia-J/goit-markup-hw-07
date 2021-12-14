@@ -638,7 +638,6 @@ body {
   align-items: baseline;
 }
 
-.footer-section__logo,
 .footer-section__studio {
   font-family: Raleway;
   font-style: normal;
@@ -651,7 +650,14 @@ body {
 }
 
 .footer-section__logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
   color: var(--accent-color);
+  transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-section__logo:hover, .footer-section__logo:focus {
