@@ -14,6 +14,12 @@
   --font-icon: #afb1b8;
 }
 
+.main-nav, .soc-list__link, .portfolio, .klients-list__link, .modal-close, .modal-form__check, .modal-form__item-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 p,
 h1,
 h2,
@@ -120,9 +126,6 @@ body {
 
 /* Main-nav */
 .main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--font-bkg-header-color);
 }
 
@@ -416,9 +419,6 @@ body {
 }
 
 .soc-list__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -456,9 +456,6 @@ body {
 }
 
 .portfolio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-bottom: 56px;
 }
 
@@ -611,9 +608,6 @@ body {
 }
 
 .klients-list__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
   background-color: var(--font-bkg-white-color);
@@ -801,9 +795,6 @@ body {
 }
 
 .modal-close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -897,18 +888,12 @@ body {
 }
 
 .modal-form__check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 14px;
   line-height: 1.71;
   color: var(--title-text-color);
 }
 
 .modal-form__item-check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-right: 7px;
   width: 16px;
   height: 15px;

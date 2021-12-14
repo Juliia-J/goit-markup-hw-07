@@ -30,7 +30,7 @@
 }
 
 .modal-close {
-  @include align-list;
+  @extend %align-list;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -129,14 +129,14 @@
 }
 
 .modal-form__check {
-  @include align-list;
+  @extend %align-list;
   font-size: 14px;
   line-height: 1.71;
   color: var(--title-text-color);
 }
 
 .modal-form__item-check {
-  @include align-list;
+  @extend %align-list;
   margin-right: 7px;
   width: 16px;
   height: 15px;

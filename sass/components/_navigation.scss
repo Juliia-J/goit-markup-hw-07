@@ -1,7 +1,7 @@
 /* Main-nav */
 
 .main-nav {
-  @include align-list;
+  @extend %align-list;
   background-color: var(--font-bkg-header-color);
 }
 

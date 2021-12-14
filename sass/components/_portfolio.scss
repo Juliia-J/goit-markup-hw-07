@@ -5,7 +5,7 @@
 }
 
 .portfolio {
-  @include align-list;
+  @extend %align-list;
   padding-bottom: 56px;
 }
 
